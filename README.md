@@ -20,7 +20,7 @@ View - Activities + Layouts
 
 Gerenciador de Dependências - Gradle
 
-Bibliotecas Utilizadas:
+<b>Bibliotecas Utilizadas:</b>
 
 Glide
 
