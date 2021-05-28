@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView tools:context=".main.MainActivity"
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_height="120dp"
+                android:layout_width="match_parent"
+                tools:srcCompat="@tools:sample/avatars"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvAvatar"
+            tools:text="Daniel Diniz"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNome"
+            tools:text="email@email.com" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEnviarDinheiro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#00a6a8"
+            android:padding="12dp"
+            android:textAllCaps="true"
+            android:text="@string/app_enviar_dinheiro"
+            android:textSize="20dp"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerHistorico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#00a6a8"
+            android:padding="12dp"
+            android:text="@string/app_historico"
+            android:textSize="20dp"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEnviarDinheiro"></com.google.android.material.button.MaterialButton>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

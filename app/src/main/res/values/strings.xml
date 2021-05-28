@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyAppNeon</string>
+    <string name="app_valor">R$ %s</string>
+    <string name="app_voltar">R$ %s</string>
+    <string name="app_historico">HISTÓRICO DE ENVIOS</string>
+    <string name="app_enviar_dinheiro">ENVIAR DINHEIRO</string>
+    <string name="app_enviar">ENVIAR</string>
+    <string name="app_valor_enviar">Valor a enviar:</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#39586a">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvNomeSheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvAvatar"
+        tools:text="Daniel Diniz"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTelefoneSheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeSheet"
+        tools:text="31991665581" />
+
+    <TextView
+        android:id="@+id/tvTransferir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/app_valor_enviar"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefoneSheet" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilValor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="#00a6a8"
+        app:hintTextColor="#00a6a8"
+        app:placeholderTextColor="#00a6a8"
+        app:boxStrokeColor="#00a6a8"
+        app:prefixTextColor="#00a6a8"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransferir">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:textColor="#00a6a8"
+            android:hint="R$ 0.00"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:imeOptions="actionDone"
+            android:textColorHint="#00a6a8"
+            tools:text="R$ 0.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnviarDinheiro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00a6a8"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        android:text="@string/app_enviar"
+        android:textSize="20dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilValor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
