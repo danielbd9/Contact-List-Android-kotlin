@@ -1,16 +1,18 @@
 # Lista-de-contatos-e-transferencia-bancaria
 
-Core:
+<b>Core:</b>
+
 Um aplicativo que lista contatos e faz transferência de valores.
 
-Funcionalidades:
+<b>Funcionalidades:</b>
+
 Listar contatos
 
 Fazer transferência
 
 Ver histórico de transferência
 
-Tecnologia / Stack:
+<b>Tecnologia / Stack:</b>
 
 Kotlin
 
