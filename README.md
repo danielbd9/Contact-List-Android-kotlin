@@ -5,16 +5,25 @@ Um aplicativo que lista contatos e faz transferência de valores.
 
 Funcionalidades:
 Listar contatos
+
 Fazer transferência
-Ver histórico
+
+Ver histórico de transferência
 
 Tecnologia / Stack:
+
 Kotlin
+
 View - Activities + Layouts
+
 Gerenciador de Dependências - Gradle
+
 Bibliotecas Utilizadas:
+
 Glide
+
 SharedPreference
+
 Material Design
 
 ![image](https://user-images.githubusercontent.com/16392300/120024866-30e9f180-bfc6-11eb-8fb8-ef07b63a2d97.png)
